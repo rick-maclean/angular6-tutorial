@@ -1,0 +1,17 @@
+
+<h4>app-servers component is here===============</h4>
+<button class="btn btn-warning"
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">Add Server</button>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>have it type the servername here===> {{serverNameUserEnters}}</p>
+<p>{{ allowNewServer }}</p>
+<!--<h3 [innerText]="allowNewServer"></h3>-->
+<p>{{ serverCreationStatus}}</p>
+<app-server></app-server>
+<br>
+<p>put some paragraph here then another app-server</p>
+<br>
+<app-server></app-server>
+<h4>app-servers component ends here==================</h4>
+
